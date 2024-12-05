@@ -49,9 +49,7 @@ export const AuthLogin = () => {
                 payload: username
             })
         }
-        authDispatch({
-            type: "CLEAR_USER_DATA"
-        })
+        
         authDispatch({
             type: "SHOW_AUTH_MODAL"
         })
@@ -84,7 +82,7 @@ export const AuthLogin = () => {
                 </div>
                 <div className="d-flex direction-column lb-in-container">
                     <label className="auth-label">Password <span className="asterisk">*</span> </label>
-                    <input className="auth-input" type="password" defaultValue={password} placeholder="Enter Mobile Number" required onChange={handlePasswordChange} />
+                    <input className="auth-input" type="password" defaultValue={password} placeholder="Enter Password" required onChange={handlePasswordChange} />
                 </div>
                 <div>
                     <button className="button btn-primary btn-login cursor">Login</button>
